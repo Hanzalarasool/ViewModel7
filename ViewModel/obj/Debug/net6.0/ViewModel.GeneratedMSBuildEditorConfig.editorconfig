@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ViewModel
+build_property.RootNamespace = ViewModel
+build_property.ProjectDir = C:\Users\developer\Downloads\ViewModel\ViewModel\ViewModel\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\developer\Downloads\ViewModel\ViewModel\ViewModel
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/AB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxBQi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/AB2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxBQjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/AB3.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxBQjMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/AB4.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxBQjQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/A/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/B/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/B/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/B/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/B/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/B/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/C/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/C/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/C/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/C/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/C/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/developer/Downloads/ViewModel/ViewModel/ViewModel/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7o4xgf89nl

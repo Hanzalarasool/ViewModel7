@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ViewModel.Data;
 using ViewModel.Models;
+using ViewModel.Models.View;
 
 namespace ViewModel.Controllers
 {
@@ -26,14 +28,192 @@ namespace ViewModel.Controllers
                           View(await _context.A.ToListAsync()) :
                           Problem("Entity set 'ViewModelContext.A'  is null.");
         }
- 
+
         // GET: AB
-        public async Task<IActionResult> AB()
+        //public async Task<IActionResult> AB()
+        //{
+        //    return _context.A != null ?
+        //                View(await _context.A.ToListAsync()) :
+        //                Problem("Entity set 'ViewModelContext.A'  is null.");
+        //}
+
+        //GET: AB
+        public IActionResult AB()
         {
-            return _context.A != null ?
-                        View(await _context.A.ToListAsync()) :
-                        Problem("Entity set 'ViewModelContext.A'  is null.");
+            //var ab = _context.C.Select(c => new AB()
+            //{
+
+            //    A = c.A,
+            //    B = c.B,
+
+            //}).ToList();
+            var ab2 = new List<AB>();
+            //query A and B table, 
+            var Alist = _context.A.ToList();
+            var Blist = _context.B.ToList();
+            //use foreach statement to filter data. And Add A and B to the ab list.
+            foreach (var item in Alist)
+            {
+                var newab = new AB()
+                {
+                    A = item
+                };
+                //add the new item into the list.
+                ab2.Add(newab);
+            }
+            foreach (var item in Blist)
+            {
+                var newab = new AB()
+                {
+                    B = item
+                };
+                //add the new item into the list.
+                ab2.Add(newab);
+            }
+            return View(ab2); // return the list to the view page.
+
         }
+        public IActionResult AB2()
+        {
+            //define a variable to store the return data.
+            var ab2 = new List<ABViewModel>();
+            //query A and B table,
+            var Alist = _context.A.ToList();
+            var Blist = _context.B.ToList();
+            //use foreach statement to filter data. And Add A and B to the ab list.
+            foreach (var item in Alist)
+            {
+                var newab = new ABViewModel()
+                {
+                    One = item.One,
+                    Three = item.Three,
+                    Two = item.Two
+                };
+                //add the new item into the list.
+                ab2.Add(newab);
+            }
+            foreach (var item in Blist)
+            {
+                var newab = new ABViewModel()
+                {
+                    One = item.One,
+                    Three = item.Three,
+                    Two = item.Two
+                };
+                //add the new item into the list.
+                ab2.Add(newab);
+            }
+
+
+            return View(ab2); // return the list to the view page.
+        }
+
+        ////GET: AB
+        //public IActionResult AB2()
+        //{
+        //    //define a variable to store the return data.
+        //    var ab2 = new List<AB>();
+        //    //query A and B table, 
+        //    var Alist = _context.A.ToList();
+        //    var Blist = _context.B.ToList();
+        //    //use foreach statement to filter data. And Add A and B to the ab list.
+        //    foreach (var item in Alist)
+        //    {
+        //        var newab = new AB()
+        //        {
+        //            A = item
+        //        };
+        //        //add the new item into the list.
+        //        ab2.Add(newab);
+        //    }
+        //    return View(ab2); // return the list to the view page.
+        //}
+
+        //GET: AB
+        //public IActionResult AB2()
+        //{
+        //    //define a variable to store the return data.
+        //    var ab2 = new List<AB>();
+        //    //query A and B table, 
+        //    var Alist = _context.A.ToList();
+        //    var Blist = _context.B.ToList();
+        //    //use foreach statement to filter data. And Add A and B to the ab list.
+        //    foreach (var item in Alist)
+        //    {
+        //        var newab = new AB()
+        //        {
+        //            A = item
+        //          //B = item                    2nd change: did not work
+        //        };
+        //        //add the new item into the list.
+        //        ab2.Add(newab);
+        //    }
+
+        //    //foreach (var item in Blist)         1st change: did not work
+        //    //{
+        //    //    var newab = new AB()
+        //    //    {
+        //    //        B = item
+        //    //    };
+        //    //    //add the new item into the list.
+        //    //    ab2.Add(newab);
+        //    //}
+
+
+
+        //    return View(ab2); // return the list to the view page.
+        //}
+
+
+
+        //GET: AB3
+        //public IActionResult AB3()
+        //{
+        //    //define a variable to store the return data.
+        //    var ab2 = new List<AB>();
+        //    //query A and B table, 
+        //    var Alist = _context.A.ToList();
+        //    var Blist = _context.B.ToList();
+        //    var ABList = Alist.Select(a => new AB
+        //    {
+        //        A = a,
+        //        B = Blist.FirstOrDefault(b => b.???? = a.????)
+        //    }).ToList();
+
+        //    //use foreach statement to filter data. And Add A and B to the ab list.
+        //    foreach (var item in Alist)
+        //    {
+        //        var newab = new AB()
+        //        {
+        //            A = item
+        //        };
+        //        //add the new item into the list.
+        //        ab2.Add(newab);
+        //    }
+        //    return View(ab2); // return the list to the view page.
+        //}
+
+        //GET: AB3a                                     original - Bruce 1
+        //var Alist = _dbContext.A.ToList();
+        //var Blist = _dbContext.B.ToList();
+        //var ABList = Alist.Select(a => new AB
+        //{
+        //    A = a,
+        //    B = Blist.FirstOrDefault(b => b.???? = a.????)
+        //}).ToList();
+
+
+        //GET: AB3b (Join)                                original - Bruce 2
+        //public IActionResult AB4()
+        //var ABList = _context.A.Join(_context.B,
+        //   a => a.????,
+        //   b => b.????,
+        //   (a, b) => new AB
+        //   {
+        //       A = a,
+        //       B = b
+        //   }).ToList();
+
 
         // GET: A/Details/5
         public async Task<IActionResult> Details(int? id)

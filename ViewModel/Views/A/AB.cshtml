@@ -13,10 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.A.One)
+                Property Set A, Property @*@Html.DisplayNameFor(model => model.A.One)*@
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.B.Two)
+                Property Set B, Property @*@Html.DisplayNameFor(model => model.B.One)*@
             </th>
             <th></th>
         </tr>
@@ -28,12 +28,12 @@
                 @Html.DisplayFor(modelItem => item.A.One)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.B.Two)
+                @Html.DisplayFor(modelItem => item.B.One)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.A.Id">Edit</a> |
+               @* <a asp-action="Edit" asp-route-id="@item.A.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.A.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.A.Id">Delete</a>
+                <a asp-action="Delete" asp-route-id="@item.A.Id">Delete</a>*@
             </td>
         </tr>
 }
