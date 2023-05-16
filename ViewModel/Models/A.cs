@@ -11,6 +11,7 @@
         public string? Three { get; set; }
 
         public IEnumerable<C>? C { get; set; }
+        public IEnumerable<B>? B { get; set; }
 
     }
 }

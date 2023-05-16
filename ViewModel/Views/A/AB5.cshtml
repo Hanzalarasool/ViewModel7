@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ViewModel.Models.A>
+
+@{
+    ViewData["AB2"] = "AB5";
+}
+
+<h1>AB5</h1>
+
+<p>
+   
+</p>
+<table class="table">
+    <thead>
+    <tr>
+        <th>
+            Property Set A
+        </th>
+        <th>
+            Relation with B (values)
+        </th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.One)
+            </td>
+            <td>
+               @if (item.B != null)
+               {
+                   @string.Join(",",item.B.Select(c=>c.One))
+               }
+            </td>
+            <td>
+                @* <a asp-action="Edit" asp-route-id="@item.A.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.A.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.A.Id">Delete</a>*@
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

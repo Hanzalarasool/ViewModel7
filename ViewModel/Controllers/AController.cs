@@ -107,6 +107,16 @@ namespace ViewModel.Controllers
 
             return View(ab2); // return the list to the view page.
         }
+        public IActionResult AB5()
+        {
+           
+            //query A and B table,
+            var Alist = _context.A.Include(c=>c.B).ToList(); //  A list includes B values if there is any
+          
+
+
+            return View(Alist); // return the list to the view page.
+        }
 
         ////GET: AB
         //public IActionResult AB2()
